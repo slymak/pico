@@ -1,0 +1,1 @@
+ampy -p /dev/ttyACM0 run ds1820.py
