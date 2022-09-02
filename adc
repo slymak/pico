@@ -1,0 +1,7 @@
+import machine, time
+from machine import ADC, Pin
+adc= ADC(Pin(26))
+while True:
+    val = adc.read_u16() / 65535.0 * 3.3
+    print('{0}mV', val * 1000)
+    time.sleep_ms(500)
